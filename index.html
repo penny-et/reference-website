@@ -7,17 +7,19 @@
     <title>Web Design 1 Reference Site</title>
 </head>
 <body>
-    <header>
-        <h1>Web Design 1 Reference Site</h1>
-        <nav>
+    <header role="banner">
+        <section id="home">
+            <h1>Web Design 1 Reference Site</h1>
+        </section>
+        <nav role="navigation" id="nav">
             <ul>
-                <li><a href="#naming conventions">Naming Conventions</a></li>
-                <li><a href="#commit messages">Commit Messages</a></li>
-                <li><a href="#common html tags"> Common HTML Tags</a></li>
+                <li><a href="#naming conventions" aria-label="naming conventions">Naming Conventions</a></li>
+                <li><a href="#commit messages" aria-label="Commit messages">Commit Messages</a></li>
+                <li><a href="#common html tags" aria-label="common html tags"> Common HTML Tags</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main role="main">
         <section id="naming conventions">
         <h2>Naming Conventions</h2>
         <article>
@@ -175,8 +177,11 @@
             <dd><p>&lt;span&gt; An inline container used to mark up a part of a text, or part of a document.</p></dd>
     </section>
     </main>
-    <footer>
-
+    <footer role="contentinfo">
+        <ul>
+            <li><a href="#nav" aria-label="to navigation">Navigation</a></li>
+            <li><a href=#home aria-label="to home page">Home</a></li>
+        </ul>
     </footer>   
 </body>
 </html>
