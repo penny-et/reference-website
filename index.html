@@ -7,8 +7,20 @@
     <title>Web Design 1 Reference Site</title>
 </head>
 <body>
-    <h1>Web Design 1 Reference Site</h1>
-    <h2>Naming Conventions</h2>
+    <header>
+        <h1>Web Design 1 Reference Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#naming conventions">Naming Conventions</a></li>
+                <li><a href="#commit messages">Commit Messages</a></li>
+                <li><a href="#common html tags"> Common HTML Tags</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="naming conventions">
+        <h2>Naming Conventions</h2>
+        <article>
         <dl>
             <dt>Files:</dt>
                 <dd>File names must only include losercase letters, numbers, and dashes. Dashes are word separators, while underscores are word connectors.</dd>
@@ -35,6 +47,8 @@
                     </ul>
                 </dd>    
         </dl>
+    </article>
+    <article>
         <dl>
             <dt>Paths:</dt>
                 <dd>The purpose of a file path is to include a file within your website. Paths open and close on their own.</dd>
@@ -44,9 +58,14 @@
                 <dd><p><strong>&lt;img src="<em>image link</em>" alt="<em>image description&gt;"</em></strong></p></dd>
                 <dd>Adds an image to website. If image doesn't load, image description will act as a placeholder. In addition, the image description is read by text to speech for the visually impaired.</dd> 
         </dl>
+    </article>
+    <article>
         <dl>
             <dt>Folders:</dt>
         </dl>
+    </article>
+    </section>
+    <section id="commit messages">
     <h2>Commit Messages</h2>
         <p>Best practices</p>
             <ul>
@@ -57,6 +76,8 @@
                 <li>Must start with imperative verb (ex. Create, Fix, Add, etc.)</li>
                 <li>Describe as if starting with "This commit will..."</li>
             </ul>
+    </section>
+    <section id="common html tags">
     <h2>Common HTML Tags</h2>
         <dl>
             <dt><h3>Headings</h3></dt>
@@ -147,12 +168,15 @@
             </dd>
         <dl><h3>Images</h3></dl>
             <dd>
-                <p>&lt;img src="this is where the image link goes" alt="description of the image that's read by screen readers" /&gt;<strong></p>
+                <p>&lt;img src="this is where the image link goes" alt="description of the image that's read by screen readers" /&gt;</p>
             </dd>
-        
-</body>
-</html>
+        <dl><h3>Generic elements</h3></dl>
+            <dd><p>&lt;div&gt; Blocks element used to group elements together</p></dd>
+            <dd><p>&lt;span&gt; An inline container used to mark up a part of a text, or part of a document.</p></dd>
+    </section>
+    </main>
+    <footer>
 
-        
+    </footer>   
 </body>
 </html>
