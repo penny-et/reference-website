@@ -14,20 +14,32 @@
         </section>
         <nav role="navigation" id="nav">
             <ul>
-                <li><a href="#naming conventions" aria-label="naming conventions">Naming Conventions</a></li>
-                <li><a href="#commit messages" aria-label="Commit messages">Commit Messages</a></li>
-                <li><a href="#common html tags" aria-label="common html tags"> Common HTML Tags</a></li>
-                <li><a href="#structuring content" aria-label="structuring content"> Structuring Content</a></li>
+                <li><a href="index.html" aria-label="HTML Basics">HTML Basics</a></li>
+                <li><a href="css.html" aria-label="CSS Basics">CSS Basics</a></li>
             </ul>
         </nav>
     </header>
     <main role="main">
+        <h2>HTML Basics</h2>
+        <nav role="navigation" id="nav">
+            <ul>
+                <li><a href="#naming conventions" aria-label="naming conventions">Naming Conventions</a></li>
+                <li><a href="#commit messages" aria-label="Commit messages">Commit Messages</a></li>
+                <li><a href="#common html tags" aria-label="common html tags"> Common HTML Tags</a></li>
+                <li><a href="#structuring content" aria-label="structuring content"> Structuring Content</a></li>
+                <li><a href="#linking elements" aria-label="linking elements">Linking Elements</a></li>
+                <li><a href="#comments" aria-label="comments">Comments</a></li>
+                <li><a href="#landmark" aria-label="landmark roles">Landmark Roles</a></li>
+                <li><a href="#aria" aria-label="aria labels">Aria Labels</a></li>
+                <li><a href="#skip" aria-label="skip links">Skip Links</a></li>
+            </ul>
+        </nav>
         <section id="naming conventions">
         <h2>Naming Conventions</h2>
         <article>
         <dl>
             <dt>Files:</dt>
-                <dd>File names must only include losercase letters, numbers, and dashes. Dashes are word separators, while underscores are word connectors.</dd>
+                <dd>File names must only include lowercase letters, numbers, and dashes. Dashes are word separators, while underscores are word connectors.</dd>
                 <dd>
                     <p>Good Examples:</p>
                 </dd>
@@ -78,6 +90,7 @@
     </section>
     <section id="common html tags">
     <h2>Common HTML Tags & Elements</h2>
+    <article id="headings">
         <dl>
             <dt><h3>Headings</h3></dt>
                 <dd>Heading tags mark headings based on importance.</dd>
@@ -91,6 +104,8 @@
                 <dd><h5>This is an &lt;h5&gt; heading.</h5></dd>
                 <dd><h6>This is an &lt;h6&gt; heading. It is the least important.</h6></dd>
         </dl>
+        </article>
+        <article id="paragraphs">
         <dl>
             <dt><h3>Paragraphs</h3></dt>
                 <dd>Defines a paragraph of text. Always starts on a new line of code. Browser automatically adds margins above and below defined text.</dd>
@@ -98,6 +113,8 @@
                     <p><strong>&lt;p&gt;<em>insert text here</em>&lt;/p&gt;</strong></p>
                 </dd>
         </dl>
+        </article>
+        <article id="lists">
         <dl>
             <dt><h3>List Item</h3></dt>
                 <dd>Individual items within a list.</dd>
@@ -123,6 +140,8 @@
                     <p><strong>&lt;/ol&gt;</strong></p>
                 </dd>
         </dl>
+        </article>
+        <article id="quote">
         <dl>
             <dt><h3>Quote</h3></dt>
                 <dd>Adds quotation marks around the specified text.</dd>
@@ -130,6 +149,8 @@
                     <p><strong>&lt;q&gt;<q><em>Me?</em></q>&lt;/q&gt;</strong></p>
                 </dd>
         </dl>
+        </article>
+        <article id="blockquote">
         <dl>
             <dt><h3>Blockquote</h3></dt>
                 <dd>For large stand alone quotes. Indents specified text.</dd>
@@ -137,6 +158,8 @@
                     <p><strong>&lt;blockquote&gt;<blockquote><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em></blockquote>&lt;/blockquote&gt;</strong></p>
                 </dd>
         </dl>
+        </article>
+        <article id="cite">
         <dl>
             <dt><h3>Cite</h3></dt>
             <dd>Used for marking the source of the quote.</dd>
@@ -146,6 +169,8 @@
                     <p><strong>&lt;/cite&gt;</strong></p>
             </dd>
         </dl>
+        </article>
+        <article id="phrasing">
         <dl>
             <dt><h3>Phrasing elements</h3></dt>
             <dd>
@@ -161,18 +186,32 @@
                 <p>&lt;b&gt;<b> Keyword </b>&lt;/b&gt;</p>
             </dd>
         </dl>
-        <dl><h3>Hyperlink</h3></dl>
+        </article>
+        <article id="hyperlink">
+        <dl>
+            <dt><h3>Hyperlink</h3></dt>
             <dd>
                 <p>&lt;a href="this is where the link goes"&gt;<strong> This is the displayed text </strong>&lt;/a&gt;</p>
             </dd>
-        <dl><h3>Images</h3></dl>
+        </dl>
+        </article>
+        <article id="images">
+        <dl>
+            <dt><h3>Images</h3></dt>
             <dd>
                 <p>&lt;img src="this is where the image link goes" alt="description of the image that's read by screen readers" /&gt;</p>
             </dd>
-        <dl><h3>Generic elements</h3></dl>
+        </dl>
+        </article>
+        <article id="generic"></article>
+        <dl>
+            <dt><h3>Generic elements</h3></dt>
             <dd><p>&lt;div&gt; Blocks element used to group elements together</p></dd>
             <dd><p>&lt;span&gt; An inline container used to mark up a part of a text, or part of a document.</p></dd>
-        <dl><h3>Figure & Figcaption</h3>
+        </dl>
+        <article id="fig">
+        <dl>
+            <dt><h3>Figure & Figcaption</h3></dt>
             <dd><p>The &lt;figcaption&gt; adds a caption or legend to describe the contents of its parent: &lt;figure&gt;</p></dd>
             <dd>
                 <p>&lt;figure&gt;</p>
@@ -181,41 +220,121 @@
                 <p>&lt;/figure&gt;</p>
             </dd>
         </dl>
+    </article>
     </section>
     <section id="structuring content">
     <h2>Structuring Content</h2>
-        <dl><h3>Header</h3>
+    <article id="header">
+        <dl>
+            <dt><h3>Header</h3></dt>
             <dd><p>The header is the intro content at the top of the page. It usually includes a logo and main navigation.</p>
             <p>&lt;header&gt; &lt;/header&gt;</p></dd>
         </dl>
-        <dl><h3>Footer</h3>
+    </article>
+    <article id="footer">
+        <dl>
+            <dt><h3>Footer</h3></dt>
             <dd><p>The bottom content of a webpage. Usually includes links, copyright info, extra info about the company, terms and services.</p>
             <p>&lt;footer&gt; &lt;/footer&gt;</p></dd>
         </dl>
-        <dl><h3>Main</h3>
+    </article>
+    <article id="main">
+        <dl>
+            <dt><h3>Main</h3></dt>
             <dd><p>The main wraps around the main content of the page. It can only be used once per page.</p>
             <p>&lt;main&gt; &lt;/main&gt;</p></dd>
-
         </dl>
+    </article>
+    <article id="section">
         <dl><h3>Section</h3>
             <dd><p>Wraps around a related piece of content.</p>
             <p>&lt;section&gt; &lt;/section&gt;</p></dd>
         </dl>
-        <dl><h3>Article</h3>
+    </article>
+    <article id="article">
+        <dl>
+            <dt><h3>Article</h3></dt>
             <dd><p>Wraps around a self-contained composition.</p>
             <p>&lt;article&gt; &lt;/article&gt;</p></dd>
         </dl>
-        <dl><h3>Navigation</h3>
+    </article>
+    <article id="navigation">
+        <dl>
+            <dt><h3>Navigation</h3></dt>
             <dd><p>Provides navigation in the form of links.</p>
             <p>&lt;nav&gt; &lt;/nav&gt;</p></dd>
         </dl>
-
+    </article>
+    </section>
+    <section id="linking elements">
+        <h2>Linking Elements Same Page</h2>
+        <article id="linking">
+            <dl>
+                <dt>Clickable Link</dt>
+                <dd><p>&lt;a href="#<strong>id name</strong>"&gt; <em>Displayed text</em>&lt;/a&gt;</p></dd>
+                <dt>Destination of Link</dt>
+                <dd><p>&lt;section id="<strong>id name</strong>"&gt;</p></dd>
+            </dl>
+        </article>
+    </section>
+    <section id="comments">
+        <h2>Comments</h2>
+        <article id="comments">
+            <dl>
+                <dd>Comments aren't displayed in the browser, however they are seen in the HTML. This is used to leave notes and sources.</dd>
+                <dd><p>&lt;!-- <em>write message here</em> --&gt;</p></dd>
+            </dl>
+        </article>
+    </section>
+    <section id="landmark">
+        <h2>Landmark Roles</h2>
+        <article id="banner">
+            <dl>
+                <dt><h3>Header Role</h3></dt>
+                <dd>&lt;header role="banner"&gt;</dd>
+                <dd><p>This role defines an element as the masthead. It's added to the header.</p></dd>
+            </dl>
+        </article>
+        <article id="navigation">
+            <dl>
+                <dt><h3>Navigation Role</h3></dt>
+                <dd>&lt;nav role="navigation"&gt;</dd>
+                <dd><p>This role defines an element as the primary navigation. It's added to the top nav.</p></dd>
+            </dl>
+        </article>
+        <article id="main">
+            <dl>
+                <dt><h3>Main Role</h3></dt>
+                <dd>&lt;main role="main"&gt;</dd>
+                <dd><p>This role defines an element as the main content of the page. It's added to the main.</p></dd>
+            </dl>
+        </article>
+        <article id="contentinfo">
+            <dl>
+                <dt><h3>Footer Role</h3></dt>
+                <dd>&lt;footer role="contentinfo"&gt;</dd>
+                <dd><p>This role defines an element as information about the content. It's added to the footer.</p></dd>
+            </dl>
+        </article>
+    </section>
+    <section id="aria">
+        <article id="aria">
+        <h2>Aria Labels</h2>
+            <dl>
+                <dd>The purpose of aria labels is to add a non-visual label to links. The label will only be read by screen-readers.</dd>
+                <dd><p>&lt;a href="#"<strong>aria-label="description of link</strong>"&gt;Visible text&lt;/a&gt;</p></dd>
+            </dl>
+    </article>
+    </section>
+    <section id="skip">
+        <h2>Skip Links</h2>
+        <p>See <a href="#linking elements">Linking Elements Same Page</a></p>
     </section>
     </main>
     <footer role="contentinfo">
         <ul>
             <li><a href="#nav" aria-label="to navigation">Navigation</a></li>
-            <li><a href=#home aria-label="to home page">Home</a></li>
+            <li><a href="index.html" aria-label="to home page">Home</a></li>
         </ul>
     </footer>   
 </body>
