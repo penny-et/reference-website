@@ -36,19 +36,26 @@
             <article id="creating">
             <dl>
                 <dt><h3>Creating the CSS File</h3></dt>
-                <dd></dd>
+                <dd>To create the CSS file, create a file ending in .css and place it inside a folder named css.</dd>
             </dl>
             </article>
             <article id="attaching">
                 <dl>
                     <dt><h3>Attaching the CSS File</h3></dt>
-                    <dd></dd>
+                    <dd>To attach the .css file to the HTML, the line written below must be placed within the head.
+                    <p>&lt;link rel="stylesheet" href="css/style.css"&gt;</p>
+                    <p>The other option is to simply write <em>link</em> and the line should autofill.</p>
+                    </dd>
                 </dl>
                 </article>
                 <article id="syntax">
                     <dl>
                         <dt><h3>CSS Syntax</h3></dt>
-                        <dd></dd>
+                        <dd>The entire block is called a rule set. A selector defined which HTML element is being targeted. A declaration consists of a property and a value, and ends with a semicolon. A property is how the elemet will be altered, while a value is what the element will be altered to.
+                        <strong><p>h1 {</p>
+                        <p>colour: black;</p>
+                        <p>}</p></strong>
+                        </dd>
                     </dl>
                     </article>
         </section>
@@ -60,28 +67,35 @@
                 <dd></dd>
             </dl>
             </article>
-            <article id="font size">
+            <article id="font-size">
                 <dl>
                     <dt><h3>Font Size</h3></dt>
-                    <dd></dd>
+                    <dd>Changes the size of the font. Value is a single number and can be in rem, em or px, however rem is preffered.
+                    <p><strong>font-size: 3rem;</strong></p><dd>
                 </dl>
             </article>
-            <article id="font weight">
+            <article id="font-weight">
                 <dl>
                     <dt><h3>Font Weight</h3></dt>
-                    <dd></dd>
+                    <dd>Changes the weight of the text.
+                    <p><strong>font-weight: bold;</strong></p>
+                    </dd>
                 </dl>
             </article>
-            <article id="font style">
+            <article id="font-style">
                 <dl>
                     <dt><h3>Font Style</h3></dt>
-                    <dd></dd>
+                    <dd>Changes the style of the text.
+                    <p><strong>font-style: italic;</strong></p>
+                    </dd>
                 </dl>
             </article>
             <article id="font height">
                 <dl>
                     <dt><h3>Font Height</h3></dt>
-                    <dd></dd>
+                    <dd>Changes the height of the text. Value is a multiplier.
+                    <p><strong>line-height: 1.5;</strong></p>
+                    </dd>
                 </dl>
             </article>
             <article id="font shorthand">
